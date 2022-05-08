@@ -12,6 +12,63 @@ html {
     font-size: 16px;
 }
 
+.header {
+    .container {
+        width: 100%;
+        background-color: $cw;
+        position: fixed;
+        height: 5rem;
+        top: 30px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10rem;
+
+        .logo {
+            text-decoration: none;
+            color: $c1;
+            font-size: $text-xl;
+            font-weight: $font-semibold;
+        }
+
+        .navbar {
+            display: flex;
+
+            a {
+                text-decoration: none;
+                color: $c3;
+                padding: 0 1rem;
+                font-size: $text-lg;
+                font-weight: $font-regular;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: $c1;
+                    transition: all 0.5s;
+                }
+
+                &:hover {
+                    color: $c1;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .active {
+                color: $c1;
+            }
+        }
+    }
+}
+
 
 .carousel {
     height: 20rem;
