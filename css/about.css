@@ -425,6 +425,7 @@ html {
   margin-bottom: 1rem;
   -webkit-transition: all 0.5;
   transition: all 0.5;
+  cursor: pointer;
 }
 
 .team .container .row .col .img1 {
