@@ -364,3 +364,54 @@ html {
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .header {
+        .container {
+            // flex-wrap: wrap;
+            display: block;
+            padding: 0;
+            justify-content: flex-start;
+
+            .navbar {
+                a{
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+
+    .post {
+      .container {
+          .pets {
+              .row {
+                  display: block;
+                  width: 100%;
+
+                  .col {
+                      width: 100%;
+                      margin: 0;
+                  }
+              }
+          }
+      }
+    }
+
+
+
+    .footer {
+        .container {
+            padding: 1rem 0;
+            .col-left {
+                padding: 0;
+            }
+
+            .col-right {
+                .company {
+                    // padding-right: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

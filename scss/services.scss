@@ -310,3 +310,57 @@ html {
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .header {
+        .container {
+            // flex-wrap: wrap;
+            display: block;
+            padding: 0;
+            justify-content: flex-start;
+
+            .navbar {
+                a{
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+
+    .content {
+        .container {
+            .row {
+                display: block;
+
+                .col-left {
+                    width: 100%;
+                    padding: 10px 0;
+                }
+
+                .col-right {
+                    width: 100%;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+
+
+
+
+    .footer {
+        .container {
+            padding: 1rem 0;
+            .col-left {
+                padding: 0;
+            }
+
+            .col-right {
+                .company {
+                    // padding-right: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

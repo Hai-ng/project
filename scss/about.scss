@@ -541,3 +541,86 @@ html {
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .header {
+        .container {
+            // flex-wrap: wrap;
+            display: block;
+            padding: 0;
+            justify-content: flex-start;
+
+            .navbar {
+                a{
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+
+    .experience {
+        .container {
+            display: block;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            padding: 0;
+
+            .title {
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+            }
+        }
+    }
+
+    .history {
+        // max-width: fit-content;
+        .container {
+            display: none;
+        }
+    }
+
+    .activity {
+        .container {
+            .col-left {
+                p {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .team {
+        .container {
+            .row {
+                justify-content: flex-start;
+                .col {
+                    width: 18%;
+                    margin: auto;
+                    .img {
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .container {
+            padding: 1rem 0;
+            .col-left {
+                padding: 0;
+            }
+
+            .col-right {
+                .company {
+                    // padding-right: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

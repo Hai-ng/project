@@ -556,4 +556,57 @@ html {
 .footer .copyright p a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 576px) {
+  .header .container {
+    display: block;
+    padding: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header .container .navbar a {
+    padding: 0 5px;
+  }
+  .experience .container {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
+  .experience .container .title {
+    width: 100%;
+  }
+  .experience .container .content {
+    width: 100%;
+  }
+  .history .container {
+    display: none;
+  }
+  .activity .container .col-left p {
+    padding: 0;
+  }
+  .team .container .row {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .team .container .row .col {
+    width: 18%;
+    margin: auto;
+  }
+  .team .container .row .col .img {
+    height: 150px;
+  }
+  .footer .container {
+    padding: 1rem 0;
+  }
+  .footer .container .col-left {
+    padding: 0;
+  }
+  .footer .container .col-right .company {
+    margin-right: 10px;
+  }
+}
 /*# sourceMappingURL=about.css.map */
