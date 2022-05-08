@@ -11,6 +11,74 @@ html {
   font-size: 16px;
 }
 
+.header .container {
+  width: 100%;
+  background-color: #FFFFFF;
+  position: fixed;
+  height: 5rem;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10rem;
+}
+
+.header .container .logo {
+  text-decoration: none;
+  color: #189A46;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header .container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .container .navbar a {
+  text-decoration: none;
+  color: #000c04;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.header .container .navbar a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #189A46;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .container .navbar a:hover {
+  color: #189A46;
+}
+
+.header .container .navbar a:hover::after {
+  width: 100%;
+}
+
+.header .container .navbar .active {
+  color: #189A46;
+}
+
 .carousel {
   height: 20rem;
 }
